@@ -18,7 +18,7 @@ function greet() {
   }
 }
 
-  if (empty($_SESSION['valid'])){
+  if ($_SESSION['valid'] == false){
     if ($_POST['username'] == "user" &&
     $_POST['password'] == 'password') {
         $_SESSION['valid'] = true;
