@@ -1,5 +1,6 @@
 
 <?php
+session_start();
    if ($_POST['username'] == 'user' &&
       $_POST['password'] == 'password') {
       $_SESSION['valid'] = true;
